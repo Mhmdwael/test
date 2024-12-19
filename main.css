@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 500px;
+  margin-top: 50px;
+  position: relative;
+  margin-inline: auto;
+  background-color: transparent;
+  /* background-color: red; */
+  overflow: hidden;
+}
+
+.parent img {
+  width: 100%;
+}
+
+.layer {
+
+  height: 100%;
+  width: 100%;
+  background-color: rgba(119, 85, 153, 0.525);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translatey(100%);
+  transition: transform 2s ease;
+  z-index: 4;
+}
+.parent:hover .layer {
+  transform: translatey(0);
+} 
